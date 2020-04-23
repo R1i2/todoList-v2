@@ -130,10 +130,6 @@ app.post("/delete",function(req,res){
         }})
     }
 });
-let port=process.env.PORT;
-if(port==NULL||port==""){
-    port=3000;
-}
-app.listen(port,function(){
+app.listen(process.env.PORT,function(){
     console.log("port is on");
 });
